@@ -28,7 +28,7 @@ public class PrimitiveEx {
     float e = 1.1111111111F; // float 타입의 값은 마지막에 F(f)를 추가
     System.out.println(e);
     
-    // 6. double : 8바이트 실수 - 기본 실수 타입
+    // 6. double : 8바이트 실수 - 기본 실수 타입 (소수점 필요시 사용)
     double f = 1.111111111;
     System.out.println(f);
     
@@ -40,6 +40,21 @@ public class PrimitiveEx {
     boolean h = true;
     System.out.println(h);
       
+    // 변수 스코프 (scope)
+    // 변수가 선언된 중괄호 {} 내부에서만 접근이 가능함 - 지역 변수
+    {
+     int x = 10;
+     System.out.println(x);
+    }
+    // x = 20;  -> 중괄호 밖에서 수정이 안됨
+  
+    // 상수 (constant variable)
+    // 할당된 값을 바꿀 수 없다. 반드시 초기 할당이 필요하다.
+    // final 키워드를 변수 선언 시 추가한다. 관례상 변수 명은 대문자로 작성한다.
+    final double PI = 3.14;
+    System.out.println(PI);
+    
+    
   }
 
 }
