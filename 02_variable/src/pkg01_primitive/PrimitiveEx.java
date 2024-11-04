@@ -39,7 +39,7 @@ public class PrimitiveEx {
     // 8. boolean : 이론상 1비트 (실제는 JVM이 담당), true 또는 false 저장
     boolean h = true;
     System.out.println(h);
-    
+      
   }
 
 }
