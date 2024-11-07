@@ -13,7 +13,7 @@ public class Sample {
 
   /**
    * 반환이 void 인 경우 return; 을 통해 메소드 사용을 중지한다.
-   * 
+   * void는 반환이 없지만 return; 을 통해 메소드 사용 중지는 가능
    * @param number 양의 정수를 전달받는다. 음의 정수가 전달되면 사용하지 않는다.
    */
   void methodA(int number) {
