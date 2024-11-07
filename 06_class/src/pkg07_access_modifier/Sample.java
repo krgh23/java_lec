@@ -14,16 +14,24 @@ package pkg07_access_modifier;
  * 4. private   : 동일 클래스에서 접근가능 (필드의 권한)
  */
 
+/*
+ * Getter 와 Setter (정해진 이름 마음대로 이름정하면 안됨!)
+ * 1. Getter : 필드 값을 반환하는 메소드. get + 필드명으로 이름을 만든다.
+ * 2. Setter : 필드 값을 저장하는 메소드. set + 필드명으로 이름을 만든다.
+ * 3. 이클립스의 코드 자동 완성 기능을 권장한다. 
+ */
 public class Sample {
 
   private String item;
 
+  public String getItem() {
+    return item;
+  }
+
   public void setItem(String item) {
     this.item = item;
   }
-  
-  
-  
+
   
   
   

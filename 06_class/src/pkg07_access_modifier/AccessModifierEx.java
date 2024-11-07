@@ -10,6 +10,8 @@ public class AccessModifierEx {
     // s.tiem = "데이터";
     s.setItem("데이터");
     
+    // system.out.println(s.item);
+    System.out.println(s.getItem());
     
     
     
