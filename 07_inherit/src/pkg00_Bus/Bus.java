@@ -39,7 +39,7 @@ public class Bus {
   }
   
   
-  // 버스 탑승 명단(1qjswhktjr : 홍길동, 2번 좌석 : 비어있음, ...)
+  // 버스 탑승 명단 (1번 좌석 : 홍길동, 2번 좌석 : 비어 있음, ...)
   public void info( ) {
     for(int i = 0; i < seats.length; i++) {
       Person p = seats[i].getPerson(); // 각 좌석에 앉은 사람
