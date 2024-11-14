@@ -1,15 +1,14 @@
 package pkg07_Cart;
 
+import java.util.List;
+
 public class Cart {
 
-  private Product[] products;
+  private List<Product> products;
   private int idx;  // 인덱스 == Product 의 갯수
   
   public Cart() {
-    
-  }
-  public Cart(int length) {
-    products = new Product[length];
+    products = new ArrayList<Product>;
   }
   
   public Product[] getProducts() {

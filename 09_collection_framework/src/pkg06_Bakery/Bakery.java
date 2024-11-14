@@ -9,7 +9,6 @@ public class Bakery {
   private int price;   // 빵가격
   private int money;   // 자본금
   
-  
   public Bakery(int bread, int price, int money) {
     super();
     this.bread = bread;
@@ -48,10 +47,7 @@ public class Bakery {
    * @param bread 고객이 사려는 빵의 갯수
    * @return 판매할 빵의 갯수와 잔돈
    */
-  public static void BreadNChange(String bread, Object money) {
-    Map<String, Object> map = new HashMap();
-    map.put(bread, money);
-  }
+  
   
   public BreadNChange sell(int money, int bread) {
     // 판매할 빵이 부족한상황
