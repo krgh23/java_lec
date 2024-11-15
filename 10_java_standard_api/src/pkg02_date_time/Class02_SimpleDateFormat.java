@@ -25,6 +25,14 @@ public class Class02_SimpleDateFormat {
     String result = sdf.format(date);
     System.out.println(result);
     
+
+    /*
+     * 코드단축
+     * Date date = new Date();
+     * String result = new SimpleDateFormat("a h:mm yyyy-MM-dd").format(date);
+     * System.out.println(result);
+     */
+    
   }
 
 }
