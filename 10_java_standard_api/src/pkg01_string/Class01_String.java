@@ -145,8 +145,8 @@ public class Class01_String {
     
     int spaceIndex = str.indexOf(" ");
     
-    System.out.println(str.substring(0, spaceIndex));
-    System.out.println(str.substring(spaceIndex + 1));
+    System.out.println(str.substring(0, spaceIndex));   // 공백 이전의 부분 문자열을 출력합니다.
+    System.out.println(str.substring(spaceIndex + 1));  // 공백 이후의 부분 문자열을 출력합니다.
     
   }
   
@@ -161,7 +161,7 @@ public class Class01_String {
     
     System.out.println(str.startsWith("."));
     System.out.println(str.endsWith(".com"));
-    System.out.println(str.contains("@"));
+    System.out.println(str.contains("@"));  //컨텐츠
     
   }
   
@@ -173,8 +173,8 @@ public class Class01_String {
     
     String str = " ";
     
-    System.out.println(str.isEmpty());  // false -> 글자수 0 여야 true
-    System.out.println(str.isBlank());  // true
+    System.out.println(str.isEmpty());  // false -> 글자수 0 여야 true //이즈엠티
+    System.out.println(str.isBlank());  // true  
     
   }
   
@@ -224,17 +224,20 @@ public class Class01_String {
     
     String str = "aaa.bbb.ccc.ddd.txt";
     
+    // 문자열을 '.'을 기준으로 분리하여 배열에 저장
     String[] result = str.split("\\.");
     System.out.println(Arrays.toString(result));
     
+    // 배열의 마지막 요소를 출력 (파일 확장자 부분)
     System.out.println(result[result.length - 1]);
     
+    // 배열의 요소들을 '.'으로 다시 연결하여 원본 문자열로 출력
     System.out.println(String.join(".", result));
     
   }
   
   public static void method14() {
-    System.out.println("-------------------method14-------------------");
+    System.out.println("\n-------------------method14-------------------\n");
     
     // toUpperCase : 대문자로 변환
     // toLowerCase : 소문자로 변환
@@ -253,9 +256,9 @@ public class Class01_String {
     
     // 실수 형식
     double number1 = 100.5;
-    System.out.println(String.format("%f", number1));
-    System.out.println(String.format("%.2f", number1));
-    System.out.println(String.format("%10.2f", number1));
+    System.out.println(String.format("%f", number1));       // 기본 실수 형식 (소수점 이하 6자리)
+    System.out.println(String.format("%.2f", number1));     // 소수점 이하 2자리까지만 표시
+    System.out.println(String.format("%10.2f", number1));   // 전체 10자리로 맞추고 소수점 이하 2자리 표시 (앞쪽 빈 자리 공백 채움)
     
     // 정수 형식
     int number2 = 123;
@@ -268,7 +271,7 @@ public class Class01_String {
     
     // 문자열 형식
     String str = "hello";
-    System.out.println(String.format("%s", str));
+    System.out.println(String.format("%s", str));     // 기본 문자열 형식
     System.out.println(String.format("%10s", str));   // 오른쪽 정렬
     System.out.println(String.format("%-10s", str));  // 왼쪽 정렬
     
@@ -282,6 +285,9 @@ public class Class01_String {
     String uri = "http://localhost:8080/project/list.do";
     String contextPath = "/project";
     
+    System.out.println(uri.substring(contextPath + 1)); 
+    System.out.println(uri.lastIndexOf(contextPath));
+
     
   }
   
