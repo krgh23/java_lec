@@ -15,7 +15,7 @@ public class OutputEx {
     // 생성 모드 : 항상 새로 만드는 모드
     
     // 디렉터리
-    File dir = new File("\\storage");  //  "\\" 최상위 디렉토리에서 시작
+    File dir = new File("\\storage");  //  "\\" 최상위 디렉토리에서 시작 
     if( !dir.exists() )
       dir.mkdir();
     
