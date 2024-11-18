@@ -40,6 +40,11 @@ public class Car implements Serializable {
     this.model = model;
   }
 
+  @Override
+  public String toString() {
+    return "Car [brand=" + brand + ", model=" + model + "]";
+  }
+
   
   
   
