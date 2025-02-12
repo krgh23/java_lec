@@ -1,7 +1,5 @@
 package pkg02_parameter;
 
-import pkg02_parameter.Sample.Car;
-
 public class ParameterEx {
 
   public static void main(String[] args) {
